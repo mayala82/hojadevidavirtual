@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="device-width, user-scalable=no">
-    <title>Mi Hoja de Vida Digital</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Educación</title>
   </head>
   <body>
     <header>
@@ -209,37 +209,75 @@
         </ul>
       </nav>
     </header>
-    <h2>Información Personal</h2>
-    <img src="img/IMG-20140520-WA0001.jpg" alt="Hoja de vida" title="Hoja de Vida" width="350px" >
-    <ul>
-      <li>
-        <strong>Nombres:</strong> Miguel
-      </li>
-      <li>
-        <strong>Apellidos:</strong> Ayala
-      </li>
-      <li>
-        <strong>Edad:</strong> 35 años
-      </li>
-    </ul>
-    <h2>Perfil Profesional</h2>
-    <p>
-      Ingeniero de sistemas egresado de la Universidad de San Buenaventura Cartagena con capacidad para <strong>crear, coordinar, dirigir, organizar y ejecutar proyectos</strong>. Con amplios conocimientos en Base de Datos, análisis, diseño y desarrollo de software. Visión interdisciplinaria para el trabajo en equipo desarrollando siempre un buen clima laboral. Responsabilidad en cualquier función establecida con criterio y colaboración; buen manejo de los recursos físicos, económicos y humanos.
-    </p>
-    <p>
-      Actualmente me desempeño como <strong> Ingeniero de Sistemas Desarrollador</strong> en <strong>COMFAMILIAR CARTAGENA</strong> teniendo a mi cargo la administración de la base de datos de afiliados, soporte y desarrollo de los módulos del sistema que consolidan la liquidación mensual de afiliados para la generación de los GIPS (Giro Directo a Prestadores de Salud) así como el modulo del sistema de información que soporta la operación del área de afiliaciones de la EPS’S, reportes de información a entidades de control y liquidación de contratos, de igual forma la coordinación de actividades tendientes a propender el aseguramiento en salud de nuestra población afiliada.
-    </p>
-    <h3>Idiomas que comprendo, hablo y escribo</h3>
-    <ul>
-      <li>Español</li>
-      <li>Ingles</li>
-    </ul>
-      <footer>
-        <p>&copy; Derechos Reservados</p>
-        <ul>
-          <li><strong>E-Mail:</strong> miguelayala.mendoza@gmail.com</li>
-          <li><strong><a href="https://www.facebook.com/miguel.ayala.mendoza">Facebook</a></strong></li>
-        </ul>
-      </footer>
+    <h2>Educación</h2>
+    <table border="1px" id="estudios" cellpadding="10" cellspacing="0">
+      <thead>
+        <th>Año</th>
+        <th>Institución</th>
+        <th>Lugar</th>
+        <th>¿Culminó?</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2016</td>
+          <td>SENA</td>
+          <td>Cartagena</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2005</td>
+          <td>Universidad de San Buenaventura</td>
+          <td>Cartagena</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>1998</td>
+          <td>Colegio de la Salle</td>
+          <td>Cartagena</td>
+          <td>Si</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Agregar Estudios</h3>
+    <form class="" action="Educacion.html" method="post">
+      <label for="anio"><strong>Año:</strong></label>
+      <select class="" name="anio" required>
+        <option value="">Seleccione Año</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+        <option value="2007">2007</option>
+        <option value="2006">2006</option>
+        <option value="2005">2005</option>
+        <option value="2004">2004</option>
+        <option value="2003">2003</option>
+        <option value="2002">2002</option>
+        <option value="2001">2001</option>
+        <option value="2000">2000</option>
+      </select><br><br>
+      <label for="institucion"><strong>Institución: </strong</label>
+      <input type="text" name="institucion" value=""  placeholder="Ej: Universidad de La Salle" required><br><br>
+      <label for="lugar"><strong>Lugar: </strong></label>
+      <textarea name="lugar" rows="8" cols="30"></textarea><br><br>
+      <label for="culmino"><strong>¿Culminó? </strong></label>
+      <input type="radio" name="culmino" value="Si" id="si"><label for="si">Si</label>
+      <input type="radio" name="culmino" value="No" id="no"><label for="no">No</label><br><br>
+
+      <input type="submit" name="" value="Registrar">
+    </form>
+    <footer>
+      <p>&copy; Derechos Reservados</p>
+      <ul>
+        <li><strong>E-Mail:</strong> miguelayala.mendoza@gmail.com</li>
+        <li><strong><a href="https://www.facebook.com/miguel.ayala.mendoza">Facebook</a></strong></li>
+      </ul>
+    </footer>
   </body>
 </html>
